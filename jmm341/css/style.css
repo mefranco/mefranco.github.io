@@ -1,0 +1,114 @@
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #222;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+.location {
+  font-size: 12px;
+}
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+  "experience skills"
+  "experience certifications"
+  "experience education"
+  "experience contact";
+  grid-gap: 30px;
+  /* grid-template-areas:
+  "experience  skills"
+  "experience  certifications"
+  "experience  education"
+  "experience  contact"; */
+}
+
+/* .experience {
+  grid-column-start: 1;
+  grid-column-end: 4;
+} */
+
+.experience {
+  grid-column: span 1;
+  grid-row: span 4;
+  grid-area: experience;
+}
+
+
+.skills {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-area: skills;
+}
+
+
+.certifications {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row: span 2;
+  grid-area: certifications;
+}
+
+.education {
+  grid-column: span 3;
+  grid-row: span 3;
+  grid-area: certifications;
+}
+
+.contact{
+  grid-column: span 3;
+  grid-row: span 4;
+  grid-area: contact;
+}
+
+
+#nameplate {
+  background-color: rgb(234,234,235);
+  padding: 0.5rem;
+  color: #ffffff
+}
+
+
+#experience {
+  background-color: rgb(234,234,235);
+  padding: 0.5;
+
+}
+
+#skills {
+  background-color: rgb(234,234,235);
+  padding: 0.2;
+}
+
+#certifications {
+  background-color: rgb(234,234,235);
+  padding: 0.2;
+
+}
+
+#education {
+  background-color: rgb(234,234,235);
+  padding: 0.2;
+}
+
+#contact {
+  background-color: rgb(234,234,235);
+  padding: 0.2;
+}

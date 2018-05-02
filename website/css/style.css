@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+
+/* download font for chalkduster and edit the hashtag after */
+
+body {
+  font-family: "Helvetica", sans-serif;
+  DIN ALTERNATIVE SWITCH FONTS GOOGLEFONT
+  color: #222;
+  font-size: 12px;
+  line-height: 1.5;
+  background-color: white;
+}
+
+a:visited {
+  text-decoration: none;
+  color: blue;
+}
+
+nav.main{
+width: 100%;
+background-color: rgb(234,234,235);
+font: "arial", sans-serif;
+font-size: 15px;
+line-height: 15px;
+padding: 0;
+text-align: center;
+display: inline-block;
+/* download font from google or change it for similar one */
+}
+
+nav.main ul {
+  display: inline-block;
+}
+
+nav.main ul li {
+  position: relative;
+  float: left;
+  padding-right: 80px;
+  list-style-type: none;
+}
+
+nav.main ul li a {
+  text-decoration: none;
+  color: rgb(218,89,85);
+}
+
+nav.main ul li a:hover {
+  color: rgb(165,89,85);
+}
+
+section.resume,
+header.resume {
+  padding: 1rem;
+}
+
+header h1 {
+width: 100%;
+text-align: center;
+font-family: "Futura", sans-serif;
+color: rgb(255,180,177);
+}
+
+header.resume h1 {
+  color: white;
+  text-align: left;
+}
+
+article {
+position: relative;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 26px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 16px;
+}
+
+#resume h2 {
+  margin-bottom: 0;
+}
+
+#resume h3 {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+#resume p, #resume ul {
+  margin: 0;
+}
+
+#resume article {
+  margin-bottom: 10px;
+}
+
+#contact h2 {
+  font-family: "chalkduster", decorative;
+}
+
+.divcontact {
+  position: relative;
+  float: left;
+}
+
+.divcontact ul {
+  list-style-type: none;
+}
+
+.location {
+  font-size: 9px;
+  font-style: italic;
+  display: inline-block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header"
+    "experience"
+    "skills"
+    "certifications"
+    "education"
+    "contact";
+  grid-gap: .7rem;
+  max-width: 100%;
+  margin: 0 auto;
+  width: 1100px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "header header"
+      "experience skills"
+      "experience certifications"
+      "experience education"
+      "experience contact";
+  }
+}
+
+.header {
+  background-color: rgb(234,234,235);
+  /* background color edit light pink, same as branding */
+  color: #ffffff;
+  grid-area: header;
+}
+
+.experience {
+  background-color: rgb(234,234,235);
+  grid-area: experience;
+}
+
+.skills {
+  background-color: rgb(234,234,235);
+  grid-area: skills;
+}
+
+.certifications {
+  background-color: rgb(234,234,235);
+  grid-area: certifications;
+}
+
+.education {
+  background-color: rgb(234,234,235);
+  grid-area: education;
+}
+
+.contact {
+  background-color: rgb(234,234,235);
+  grid-area: contact;
+}

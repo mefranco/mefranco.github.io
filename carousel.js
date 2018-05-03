@@ -1,4 +1,5 @@
 
+
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
@@ -16,13 +17,13 @@ function currentSlide1(n) {
 }
 
 // Next/previous controls
-function plusSlides2(n) {
-  showSlides2(slideIndex1 += n);
+function plusSlides2(n1) {
+  showSlides2(slideIndex1 += n1);
 }
 
 // Thumbnail image controls
-function currentSlide2(n) {
-  showSlides2(slideIndex2 = n);
+function currentSlide2(n1) {
+  showSlides2(slideIndex2 = n1);
 }
 
 function showSlides1(n) {
@@ -44,14 +45,14 @@ function showSlides1(n) {
   captionText.innerHTML = dots[slideIndex1-1].alt;
 }
 
-function showSlides2(n) {
+function showSlides2(n1) {
   var i;
   var myCarousel = document.getElementById("myModal2");
   var slides = myCarousel.querySelectorAll(".mySlides");
   var dots = myCarousel.querySelectorAll(".demo");
   var captionText = document.getElementById("caption2");
-  if (n > slides.length) {slideIndex2 = 1}
-  if (n < 1) {slideIndex2 = slides.length}
+  if (n1 > slides.length) {slideIndex2 = 1}
+  if (n1 < 1) {slideIndex2 = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }

@@ -1,9 +1,10 @@
 
+
 var slideIndex1 = 1;
-showSlides1(slideIndex);
+showSlides1(slideIndex1);
 
 var slideIndex2 = 1;
-showSlides1(slideIndex);
+showSlides1(slideIndex2);
 
 // Next/previous controls
 function plusSlides1(n) {
@@ -15,14 +16,14 @@ function currentSlide1(n) {
   showSlides1(slideIndex1 = n);
 }
 
-/ Next/previous controls
+// Next/previous controls
 function plusSlides2(n) {
   showSlides2(slideIndex1 += n);
 }
 
 // Thumbnail image controls
 function currentSlide2(n) {
-  showSlides2(slideIndex1 = n);
+  showSlides2(slideIndex2 = n);
 }
 
 function showSlides1(n) {

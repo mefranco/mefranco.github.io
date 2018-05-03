@@ -108,6 +108,9 @@ h3 {
   margin-bottom: 10px;
 }
 
+.description {
+  padding-top: 20px;
+}
 
 .introduction {
   /* font-family: "Shadows Into Light", Handwriting; */
@@ -227,7 +230,8 @@ h3 {
 /* Create four equal columns that floats next to eachother */
 .column {
   float: left;
-  width: 25%;
+  width: auto;
+  margin: 0 10px;
 }
 
 /* The Modal (background) */
@@ -235,13 +239,14 @@ h3 {
   display: block;
   position: relative;
   z-index: 1;
-  padding-top: 100px;
+  padding-top: 5px;
   left: 0;
   top: 0;
-  width: 100%;
+  width: 90%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  background-color: rgb(234,234,235);
+  margin: auto;
 }
 
 /* Modal Content */
@@ -250,8 +255,7 @@ h3 {
   background-color: #fefefe;
   margin: auto;
   padding: 0;
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
 }
 
 /* The Close Button */
@@ -274,6 +278,7 @@ h3 {
 /* Hide the slides by default */
 .mySlides {
   display: none;
+  text-align: center;
 }
 
 /* Next & previous buttons */
@@ -285,7 +290,7 @@ h3 {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: white;
+  color: gray;
   font-weight: bold;
   font-size: 20px;
   transition: 0.6s ease;
@@ -318,9 +323,9 @@ h3 {
 /* Caption text */
 .caption-container {
   text-align: center;
-  background-color: black;
+  background-color: rgb(234,234,235);
   padding: 2px 16px;
-  color: white;
+  color: rgb(218,89,85);
 }
 
 img.demo {

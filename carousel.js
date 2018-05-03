@@ -1,5 +1,4 @@
 
-
 var slideIndex1 = 1;
 showSlides1(slideIndex1);
 
@@ -29,8 +28,8 @@ function currentSlide2(n) {
 function showSlides1(n) {
   var i;
   var myCarousel = document.getElementById("myModal");
-  var slides = myCarousel.querySelectorAll("mySlides");
-  var dots = myCarousel.querySelectorAll("demo");
+  var slides = myCarousel.querySelectorAll(".mySlides");
+  var dots = myCarousel.querySelectorAll(".demo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex1 = 1}
   if (n < 1) {slideIndex1 = slides.length}
@@ -48,8 +47,8 @@ function showSlides1(n) {
 function showSlides2(n) {
   var i;
   var myCarousel = document.getElementById("myModal2");
-  var slides = myCarousel.querySelectorAll("mySlides");
-  var dots = myCarousel.querySelectorAll("demo");
+  var slides = myCarousel.querySelectorAll(".mySlides");
+  var dots = myCarousel.querySelectorAll(".demo");
   var captionText = document.getElementById("caption2");
   if (n > slides.length) {slideIndex2 = 1}
   if (n < 1) {slideIndex2 = slides.length}
